@@ -16,7 +16,7 @@
 		AB345AA01F3836380024371A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB345A9E1F3836380024371A /* LaunchScreen.storyboard */; };
 		AB345AAB1F3836380024371A /* TestProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB345AAA1F3836380024371A /* TestProjectTests.m */; };
 		AB345AB61F3836380024371A /* TestProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB345AB51F3836380024371A /* TestProjectUITests.m */; };
-		AB345AC51F3836500024371A /* ToolMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = AB345AC41F3836500024371A /* ToolMethod.m */; };
+		AB345AD01F3851390024371A /* ToolMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = AB345ACF1F3851390024371A /* ToolMethod.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +54,8 @@
 		AB345AB11F3836380024371A /* TestProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB345AB51F3836380024371A /* TestProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestProjectUITests.m; sourceTree = "<group>"; };
 		AB345AB71F3836380024371A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AB345AC31F3836500024371A /* ToolMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolMethod.h; sourceTree = "<group>"; };
-		AB345AC41F3836500024371A /* ToolMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolMethod.m; sourceTree = "<group>"; };
+		AB345ACE1F3851390024371A /* ToolMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolMethod.h; sourceTree = "<group>"; };
+		AB345ACF1F3851390024371A /* ToolMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolMethod.m; sourceTree = "<group>"; };
 		BFD8CD29052B1A0C49E0BE35 /* Pods-TestProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestProject/Pods-TestProject.release.xcconfig"; sourceTree = "<group>"; };
 		F2DE80E7FD5AA038CCA9A729 /* Pods-TestProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestProject/Pods-TestProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,8 +128,7 @@
 		AB345A8F1F3836380024371A /* TestProject */ = {
 			isa = PBXGroup;
 			children = (
-				AB345AC31F3836500024371A /* ToolMethod.h */,
-				AB345AC41F3836500024371A /* ToolMethod.m */,
+				AB345ACD1F3851390024371A /* Classes */,
 				AB345A931F3836380024371A /* AppDelegate.h */,
 				AB345A941F3836380024371A /* AppDelegate.m */,
 				AB345A961F3836380024371A /* ViewController.h */,
@@ -167,6 +166,15 @@
 				AB345AB71F3836380024371A /* Info.plist */,
 			);
 			path = TestProjectUITests;
+			sourceTree = "<group>";
+		};
+		AB345ACD1F3851390024371A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AB345ACE1F3851390024371A /* ToolMethod.h */,
+				AB345ACF1F3851390024371A /* ToolMethod.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,7 +364,7 @@
 			files = (
 				AB345A981F3836380024371A /* ViewController.m in Sources */,
 				AB345A951F3836380024371A /* AppDelegate.m in Sources */,
-				AB345AC51F3836500024371A /* ToolMethod.m in Sources */,
+				AB345AD01F3851390024371A /* ToolMethod.m in Sources */,
 				AB345A921F3836380024371A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -595,6 +603,7 @@
 				AB345ABC1F3836380024371A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AB345ABD1F3836380024371A /* Build configuration list for PBXNativeTarget "TestProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -603,6 +612,7 @@
 				AB345ABF1F3836380024371A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AB345AC01F3836380024371A /* Build configuration list for PBXNativeTarget "TestProjectUITests" */ = {
 			isa = XCConfigurationList;
@@ -611,6 +621,7 @@
 				AB345AC21F3836380024371A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

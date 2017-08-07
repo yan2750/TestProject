@@ -33,32 +33,7 @@
     return applicationInformation;
 }
 
-#pragma mark - 获取当前controller
-+ (UIViewController *)getCurrentViewController
-{
-    UINavigationController *nav = nil;
-    UIViewController *vc = [UIApplication sharedApplication].keyWindow.rootViewController;
-    if ([vc isKindOfClass:[UITabBarController class]]) {
-        UITabBarController *tab = (UITabBarController *)vc;
-        if ([tab.selectedViewController isKindOfClass:[UINavigationController class]]) {
-            nav = (UINavigationController *)tab.selectedViewController;
-        }
-    } else if ([vc isKindOfClass:[UINavigationController class]]){
-        nav = (UINavigationController *)vc;
-    }
-    return [nav.viewControllers lastObject];
-}
 
-#pragma mark - 默认格式弹框
-+ (void)alertWithString:(NSString *)alertString
-{
-    //如果弹框内容为空，则返回
-    if (alertString.length == 0) return;
-    
-    UIAlertController *alertC = [UIAlertController alertControllerWithTitle:nil message:alertString preferredStyle:UIAlertControllerStyleAlert];
-    [alertC addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:nil]];
-    [[self getCurrentViewController] presentViewController:alertC animated:YES completion:nil];
-}
 
 #pragma mark - 时间处理
 //yyyyMMddHHmmss时间，转成mm:ss，昨天，星期x，yy/MM/dd

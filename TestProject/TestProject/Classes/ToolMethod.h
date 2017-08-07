@@ -13,12 +13,6 @@
 //获取设备唯一标示UUID
 + (NSString *)UUIDString;
 
-//获取当前controller
-+ (UIViewController *)getCurrentViewController;
-
-//默认格式弹框
-+ (void)alertWithString:(NSString *)alertString;
-
 
 #pragma mark - 时间处理
 //yyyyMMddHHmmss时间，转成mm:ss，昨天，星期x，yy/MM/dd
